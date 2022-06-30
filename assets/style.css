@@ -1,0 +1,56 @@
+body {
+    background-color: lightslategrey;
+}
+
+.start-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255); 
+    font-size: 21px; 
+    line-height: 21px; 
+    padding: 10px; 
+    border-radius: 5px; 
+    font-family: Georgia, serif; 
+    font-weight: normal; 
+    text-decoration: none; 
+    font-style: normal; 
+    font-variant: normal; 
+    text-transform: none; 
+    background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%); 
+    box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px; 
+    border: 3px solid rgb(28, 110, 164); 
+    display: inline-block;
+    cursor: pointer;
+}
+    .start-btn:hover {
+    background: #1C6EA4; 
+}
+
+    .start-btn:active {
+    background: #144E75; 
+}
+
+#title, #information {
+    color: white;
+    text-align: center;
+}
+
+#title {
+    font-size: 60px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -385px);
+    text-decoration: underline overline;
+    
+}
+
+#information {
+    font-size: 40px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -275px);
+}
