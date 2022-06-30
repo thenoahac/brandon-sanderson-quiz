@@ -1,3 +1,44 @@
+var startBtn = document.querySelector(".start-btn")
+console.log(startBtn)
+var userChoices = document.querySelector(".questions");
+console.log(userChoices)
+var questions = 
+[
+    {
+        question: "What was the first book Brandon Sanderson wrote?",
+        options: ["Mistborn", "Elantris", "The Way of Kings", "Warbreaker"],
+        answer: 1
+    },
+
+    {
+        question: "What iconic Fantasy series did Brandon Sanderson help finish writing?",
+        options: ["Lord of The Rings", "Game of Thrones", "Wheel of Time", "The Inheritance Cycle"],
+        answer: 2
+    },
+
+    {
+        question: "What is Brandon Sanderson's bestselling novel?",
+        options: ["Words of Radiance", "Elantris", "The Alloy of Law", "Skyward"],
+        answer: 0
+    },
+];
+
+// start quiz function 
+// run the quiz function when you click start button
+// give some classes in css to turn things on and off
+// apply the class to the start button to hide it as well
+// unhide the questions 
+// start the timer
+// show timer as well and update the text content to equal the time
+// time is going to be a global variable
+
+
+
+
+
+
+
+
 // questions array
 // currentQuestion = 0
 // timeLeft
