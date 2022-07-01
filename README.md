@@ -35,7 +35,7 @@ The Links below will take you to the Repository page for this challenge as well 
 
 -EXTREMELY huge thank you to Parker McKillop for helping me debug my arrays and event listeners, as well as my timer. You were a major reason I finished this challenge.
 
--Thank you to Jovi for giving me pointers on how to format my js and my html!
+-Thank you to Hope Barrow for giving me pointers on how to format my js and my html!
 
 -Thank you to Gabe Sowa for helping me relax and rationalize my code when I was getting stressed out!
 
