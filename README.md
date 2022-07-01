@@ -2,7 +2,7 @@
 
 ## Description
 
-This was a code assignment utilizing a provided HTML, CSS,and Script.js to construct a website that allowed the user to take a timed quiz where they are shown one button at a time, and upon clicking a decision will take the user to another question and so forth until the time runs out or they answer all 5 questions. Upon completion, the user will be shown their score and a input to add their initials and log their score.
+This was a code assignment utilizing  HTML, CSS, and Script.js to construct a website that allowed the user to take a timed quiz where they are shown one button at a time, and upon clicking a decision will take the user to another question and so forth until the time runs out or they answer all 5 questions. Upon completion, the user will be shown their score and a input to add their initials and log their score.
 The motivation for building this project was really just pushing myself WAY beyond my comfort zone. I definitely have a long way to go in JavaScript and this took alot of googling, peer help, as well as ALOT of pacing around my room and trying to figure out why my code doesn't work only to see a comma missing. I can definitely say I am extremely more comfortable with my knowledge in this language after this assignment.
 I did learn however that it is really okay not to have a firm grasp on all of this, I felt like a fraud for the amount of googling I had to do and how much help I needed from peers and my teachers. I just kept having to remind myself that it is okay to fail and not do your best because its a neccessity in order to grow as a software engineer, as long as I get past every bump, I can do this.
 
