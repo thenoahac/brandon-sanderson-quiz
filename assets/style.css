@@ -4,21 +4,71 @@ body {
 
 .game-box {
     display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 600px;
+    background-color: white;
+    border-radius: 9px;
+}
+
+#question-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    Margin: 20px 20px;
+    padding: 5px;
+    font-size: 60px;
+    align-content: center;
+}
+
+.option-button {
+    color: white;
+    text-align: start;
+    border: 1px solid;
+    margin: 5px;
+    border-radius: 10px;
+    width: 450px;
+    height: 75px;
+    border: 1px solid black;
+    padding: 10px 24px;
+    outline: none;
+    font-size: 36px;
+    cursor: pointer;
+    display: block;
+    background-color: #144E75;
+    
+    
 }
 
 .final-result {
     display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 9px;
+    font-size: 48px;
+    color: white;
 }
 
 .timer-header {
     display: none;
+    color: white;
+    font-size: 48px;
+    transform: translateX(42%);
+    align-items: center;
+
 }
 
 input[type=text] {
-    padding:5px; 
+    padding: 8px; 
     border:2px solid #ccc; 
     -webkit-border-radius: 5px;
     border-radius: 5px;
+    transform: translateY(-5px);
 }
 
 input[type=text]:focus {
@@ -32,6 +82,7 @@ input[type=submit] {
     cursor:pointer;
     -webkit-border-radius: 5px;
     border-radius: 5px; 
+    transform: translateY(-5px);
 }
 
 .start-btn {
@@ -64,6 +115,9 @@ input[type=submit] {
     background: #144E75; 
 }
 
+
+
+
 #title, #information {
     color: white;
     text-align: center;
@@ -85,4 +139,12 @@ input[type=submit] {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -275px);
+}
+
+.info {
+    display: block;
+}
+
+#score-board {
+    display: none;
 }

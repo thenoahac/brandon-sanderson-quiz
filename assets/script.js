@@ -14,6 +14,9 @@ var finalScore = document.querySelector(".final-result");
 var finalResults = document.querySelector("#results");
 var initialBox = document.querySelector("#initial-box");
 var countdown = document.querySelector(".timer-header");
+var scoreBoard = document.querySelector("#score-board");
+var topScores = document.querySelector("#all-scores");
+var topScoresList = [];
 var questionCount = 0;
 var questions = 
 [
@@ -51,7 +54,7 @@ var questions =
 function timerCountdown(){
     var timerDwn = setInterval(function() {
         timeRemaining--;
-        timer.textContent = `Time:${timeRemaining}s`;
+        timer.textContent = `Time Remaining:${timeRemaining}s`;
         if (timeRemaining === 0 || questionCount === questions.length) {
             clearInterval(timerDwn);
             quizArea.style.display = "none";
@@ -105,8 +108,15 @@ function verifyAns(event) {
         item.addEventListener ("click", verifyAns);
     });
 
+    function submitScore(event) {
+        event.preventDefault();
+
+        finalResults.style.display = "none";
+        scoreBoard.style.display = "block";
+    }
 
 
+// SCRAPPED IDEAS BELOW
 
 //startBtn.addEventListener("click", function(){
    // var currentQuestion = questions[0].question
