@@ -27,14 +27,16 @@ The Links below will take you to the Repository page for this challenge as well 
 
 ## Site Image
 
-! [Quiz-Taking-Site!](https://github.com/thenoahac/Password-Generator-Challenge/blob/main/Assets/Capture.JPG)
+! [Quiz-Taking-Site!](https://github.com/thenoahac/coding-quiz-challenge4/blob/main/assets/images/Capture.JPG)
 
 ## Credits
 
--Thank you to Kristin Santee for helping me troubleshoot my functions and methods
+-Thank you to Joe Rehfuss for helping me kick off the starting code for my arrays and event listeners
 
--Thank you to Ming Zhong for giving tips on how to utilize functions 
+-EXTREMELY huge thank you to Parker McKillop for helping me debug my arrays and event listeners, as well as my timer. You were a major reason I finished this challenge.
 
--Thank you to Lindsay Lewis for helping troubleshoot the random generation function
+-Thank you to Jovi for giving me pointers on how to format my js and my html!
 
--Thank you to my class for the motivation and support :)
+-Thank you to Gabe Sowa for helping me relax and rationalize my code when I was getting stressed out!
+
+-Thank you to google for having websites like w3schools!
