@@ -1,7 +1,20 @@
+var timer = document.querySelector("#timer");
+var timeRemaining = 75;
 var startBtn = document.querySelector(".start-btn")
-console.log(startBtn)
-var userChoices = document.querySelector(".questions");
-console.log(userChoices)
+var userChoices = document.querySelector(".questions-list");
+var questionEl = document.querySelector("#question-box")
+var option1El = document.querySelector("#option-1");
+var option2El = document.querySelector("#option-2");
+var option3El = document.querySelector("#option-3");
+var option4El = document.querySelector("#option-4");
+var infoBox = document.querySelector(".info")
+var quizArea = document.querySelector(".game-box")
+var optButton = document.querySelectorAll(".option-button");
+var finalScore = document.querySelector(".final-result");
+var finalResults = document.querySelector("#results");
+var initialBox = document.querySelector("#initial-box");
+var countdown = document.querySelector(".timer-header");
+var questionCount = 0;
 var questions = 
 [
     {
@@ -21,7 +34,115 @@ var questions =
         options: ["Words of Radiance", "Elantris", "The Alloy of Law", "Skyward"],
         answer: 0
     },
+    
+    {
+        question: "What Character can be spotted in all of Brandon's Books?",
+        options: ["Vin", "Dalinar", "David", "Hoid"],
+        answer: 3
+    },
+
+    {
+        question: "What magic system does Vin use in the series Mistborn?",
+        options: ["Surgebinding", "BioChroma", "AonDor", "Allomancy"],
+        answer: 3
+    }
 ];
+
+function timerCountdown(){
+    var timerDwn = setInterval(function() {
+        timeRemaining--;
+        timer.textContent = `Time:${timeRemaining}s`;
+        if (timeRemaining === 0 || questionCount === questions.length) {
+            clearInterval(timerDwn);
+            quizArea.style.display = "none";
+            finalScore.style.display = "block";
+            finalResults.textContent = ("Your score is: " + timeRemaining + "!");
+        }
+    }, 1000);
+}
+
+startBtn.addEventListener("click", beginQuiz)
+
+function beginQuiz() {
+    infoBox.style.display = "none";
+    quizArea.style.display = "block";
+    countdown.style.display = "block";
+    questionCount = 0;
+
+    timerCountdown();
+    showQuestion(questionCount);
+}
+
+
+function showQuestion(id) {
+    if (id < questions.length) {
+        questionEl.textContent = questions[id].question;
+        option1El.textContent = questions[id].options[0];
+        option2El.textContent = questions[id].options[1];
+        option3El.textContent = questions[id].options[2];
+        option4El.textContent = questions[id].options[3];
+    }
+}
+
+function verifyAns(event) {
+    event.preventDefault();
+
+    if (questions[questionCount].answer === event.target.value) {
+
+    }
+
+    else if (questions[questionCount].answer !== event.target.value){
+    timeRemaining = timeRemaining - 10;
+    }
+
+    if (questionCount < questions.length) {
+        questionCount++;
+    }
+    showQuestion(questionCount);
+}
+
+    optButton.forEach(item => {
+        item.addEventListener ("click", verifyAns);
+    });
+
+
+
+
+//startBtn.addEventListener("click", function(){
+   // var currentQuestion = questions[0].question
+   // questionEl.textContent = currentQuestion
+   // var firstAnswer = questions[0].options[0]
+   // option1El.textContent = firstAnswer
+   // var secondAnswer = questions[0].options[1]
+   // option2El.textContent = secondAnswer
+   // var thirdAnswer = questions[0].options[2]
+  //  option3El.textContent = thirdAnswer
+  //  var fourthAnswer = questions[0].options[3]
+   // option4El.textContent = fourthAnswer
+   // startBtn.style.display = 'none';
+  //  infoBox.style.display = 'none';
+  //  quizArea.style.display = 'block';
+  //  countdown.style.display = 'block';
+//})
+
+//optButton.addEventListener("click", function(){
+  //  var currentQuestion = questions[].question
+   // questionEl.textContent = currentQuestion
+  //  var firstAnswer = questions[0].options[0]
+   // option1El.textContent = firstAnswer
+  //  var secondAnswer = questions[0].options[1]
+   // option2El.textContent = secondAnswer
+  //  var thirdAnswer = questions[0].options[2]
+  //  option3El.textContent = thirdAnswer
+  //  var fourthAnswer = questions[0].options[3]
+  //  option4El.textContent = fourthAnswer
+//})
+
+
+
+
+
+
 
 // start quiz function 
 // run the quiz function when you click start button

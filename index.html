@@ -8,22 +8,32 @@
     <title>Brandon Sanderson Quiz!</title>
 </head>
 <body>
-    <section>
+    <header class="timer-header">
+        <p id="timer">Time remaining: 75</p>
+    </header>
+    <section class="info">
         <button class="start-btn">Start Quiz!</button>
             <h1 id="title">Brandon Sanderson Quiz!</h1>
             <h2 id="information">Welcome to the quiz dedicated to Sci-fi/Fantasy Author, Brandon Sanderson! You have 75 seconds to answer 5 questions, for each question you get incorrect, 15 seconds will be deducted from your time remaining.   Don't forget to log your score, good luck!</h2>
     </section>
-    <main class="game-box">
-            <section class="questions">
-                <h1>What was the first book Brandon Sanderson wrote?</h1>
-                    <ol>
-                        <li class="option 1">Mistborn</li>
-                        <li class="option 2">Elantris</li>
-                        <li class="option 3">The Way of Kings</li>
-                        <li class="option 4">Warbreaker</li>
-                    </ol>
-            </section>
-    </main>
+    <selection class="game-box" id="questions">
+            <section class="questions-list">
+                <h1 id="question-box"></h1>
+                        <button class="option-button" id="option-1"></button>
+                        <button class="option-button" id="option-2"></button>
+                        <button class="option-button" id="option-3"></button>
+                        <button class="option-button" id="option-4"></button>
+             </section>
+    </selection>
+    <section class="final-result">
+        <h1>Awesome Job!</h1>
+        <p id="results">Your score is: </p>
+        <Form>
+            <label for="initials">Enter Your Initials:</label>
+            <input type="text" id="initial-box" name="initials" placeholder="Initials">
+            <input type="Submit">
+        </Form>
+     </section>
 
 
 
