@@ -1,4 +1,4 @@
-# Coding-Quiz-Challenge4
+# Brandon-Sanderson-Quiz
 
 ## Description
 
